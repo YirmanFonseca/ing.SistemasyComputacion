@@ -31,12 +31,12 @@ public class crearCarro {
 		String marcaCarro= vectorMarca [aleatorioMarca-1];
 		return marcaCarro;
 	}
-	public static void recorrido() {
-		int aleatorioRecorrido= (int)(Math.random()*17+1);
-		System.out.println("el numero de recorridos q realiza es "+ aleatorioRecorrido);
+	public static int recorrido() {
+		int aleatorioRecorrido= (int)(Math.random()*5+1);
+		return aleatorioRecorrido;
 	}
-	public static void kilometraje() {
+	public static int kilometraje() {
 		int aleatoriokilometros=(int)(Math.random()*99+1);
-		System.out.println(aleatoriokilometros);
+		return aleatoriokilometros;
 	}
 }
