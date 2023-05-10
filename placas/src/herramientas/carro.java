@@ -7,7 +7,7 @@ public class carro {
 	public void realizarRecorrido(int distancia) {
 		kilometraje += distancia;
 	}
-	public carro (String placaIngresada,String marcaIngresada,int realizarRecorrido) {
+	public carro (String placaIngresada,String marcaIngresada) {
 		placa=placaIngresada;
 		marca=marcaIngresada;
 		kilometraje = 0;
