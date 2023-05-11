@@ -1,6 +1,6 @@
 package herramientas;
 public class carro {
-	public int numero;
+	public String numero;
 	public String placa;
 	public String marca;
 	public int kilometraje;
@@ -8,7 +8,7 @@ public class carro {
 	public void realizarRecorrido(int distancia) {
 		kilometraje += distancia;
 	}
-	public carro (String placaIngresada,String marcaIngresada,int numeroIngresado) {
+	public carro (String placaIngresada,String marcaIngresada,String numeroIngresado) {
 		numero=numeroIngresado;
 		placa=placaIngresada;
 		marca=marcaIngresada;
