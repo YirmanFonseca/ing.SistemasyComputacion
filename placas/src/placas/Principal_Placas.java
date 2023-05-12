@@ -55,11 +55,10 @@ public class Principal_Placas {
                           vector[j+1].numero=auxiliar1;
                           vector[j+1].marca=auxiliar2;
                           vector[j+1].placa=auxiliar3;
-
-                   }    
+                   }  
+                 
              }
         }
-		 System.out.println(vector[5].numero);
       System.out.println("\nVector ordenado: ");
       	for(int i=0;i<vector.length;i++){
       		System.out.println(vector[i].numero);
@@ -68,5 +67,34 @@ public class Principal_Placas {
       		System.out.println(vector[i].kilometraje);
 
           }	
+      	System.out.println("|||el orden de menor a mayor segun el kilometraje de los carros es: |||");
+		 for(int i=0; i < vector.length-1; i++){
+            for(int j=0; j < (vector.length-1-i); j++){  
+                 if(vector[j].kilometraje > vector[j+1].kilometraje){  
+                         int aux=vector[j].kilometraje;    
+                         String auxiliar1=vector[j].numero;
+                         String auxiliar2=vector[j].marca;
+                         String auxiliar3=vector[j].placa;
+                         vector[j].kilometraje=vector[j+1].kilometraje;     
+                         vector[j].numero=vector[j+1].numero;           
+                         vector[j].marca=vector[j+1].marca;           
+                         vector[j].placa=vector[j+1].placa;           
+                         vector[j+1].kilometraje=aux;
+                         vector[j+1].numero=auxiliar1;
+                         vector[j+1].marca=auxiliar2;
+                         vector[j+1].placa=auxiliar3;
+                  }  
+                
+            }
+       }
+     System.out.println("\nVector ordenado: ");
+     	for(int i=0;i<vector.length;i++){
+     		System.out.println(vector[i].numero);
+     		System.out.println(vector[i].marca);
+     		System.out.println(vector[i].placa);
+     		System.out.println(vector[i].kilometraje);
+
+         }	
+
 	}	
 }
