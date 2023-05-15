@@ -1,5 +1,4 @@
 package herramientas;
-
 public class crearCarro {
 	public static int cantidad() {
 		int aleatorioVector=(int)(Math.random()*12+5);
@@ -32,11 +31,20 @@ public class crearCarro {
 		return marcaCarro;
 	}
 	public static int recorrido() {
-		int aleatorioRecorrido= (int)(Math.random()*5+1);
+		int aleatorioRecorrido= (int)(Math.random()*15+5);
 		return aleatorioRecorrido;
 	}
 	public static int kilometraje() {
 		int aleatoriokilometros=(int)(Math.random()*99+1);
 		return aleatoriokilometros;
 	}
+	public static void imprimir(carro[]vector) {
+		for(int i=0; i< vector.length;i++) {
+			System.out.println(vector[i].numero);
+			System.out.println(vector[i].marca);
+			System.out.println(vector[i].placa);
+			System.out.println(vector[i].kilometraje);
+		}
+	}
+	
 }
